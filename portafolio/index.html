@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio de Victoria Gabriela Velásquez Orellana, Ingeniera en Sistemas Informáticos.">
+    <title>Portafolio | Victoria Gabriela Velásquez Orellana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about-me-section"">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#lenguajes">Lenguajes de Programacion</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><button id="dark-mode-toggle"> Modo Oscuro</button></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="profile-image">
+        <img src="img/perfilfoto.jpeg" alt="Foto de Victoria Gabriela Velásquez Orellana">
+    </div>
+    <h1>Victoria Gabriela Velásquez Orellana</h1>
+    <p>Ingeniera en Sistemas Informáticos</p>
+    <a href="#contact" class="btn">Contáctame</a>
+</section>
+<section class="about-me-section" id="about-me-section">
+    <div class="about-me-card">
+        <h2>Sobre Mí</h2>
+        <div class="about-me-text">
+            <p>Soy una ingeniera en sistemas informáticos apasionada por el desarrollo de soluciones tecnológicas a
+                medida, con experiencia en consultoría y análisis. Mi enfoque está en la automatización de procesos, el
+                diseño de sistemas eficientes y la implementación de tecnologías emergentes.</p>
+        </div>
+        <div class="learn-more">
+            <button onclick="showDetails()">¡Descubre más!</button>
+            <div class="details" id="details">
+                <p>Aquí puedes explorar más sobre mi experiencia y habilidades profesionales. ¡No dudes en contactarme
+                    para más detalles!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="section-padding">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects-container">
+        <div class="project">
+            <h3>Sistema de Estados Financieros Proforma </h3>
+            <p>Desarrollamos un sistema contable que incluia Balance General, Estado de Resultado. este sistema fue realizado en conjunto con mis compañeros de grupo</p>
+            <a href="proyecto1.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+
+        <div class="project">
+            <h3>Analisis de Riego realizado al Grupo Campestre</h3>
+            <p>El Análisis de Riesgo realizado al Grupo Campestre consistió en una evaluación detallada de los posibles factores que
+            podrían afectar negativamente sus operaciones y resultados financieros. A través de un enfoque integral, se
+            identificaron los principales riesgos</p>
+            <a href="proyect2.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+
+        <div class="project">
+            <h3>Sistema de asistencia para la Óptica Estrella de David</h3>
+             <p>Desarrollamos un sistema de asistencia que mejoró significativamente la organización y planificación de los recursos
+              humanos de la óptica.</p>
+            <a href="proyecto3.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="project">
+            <h3>Responsable de Pruebas de Aceptación e Integración</h3>
+            <p>En el proyecto ASEIS NEW, participé como responsable de la ejecución de las pruebas de aceptación e integración. Estas
+            pruebas garantizaron que los diferentes módulos del sistema funcionaran de manera conjunta y cumplieran con los
+            requisitos establecidos, asegurando su correcto desempeño antes de la implementación final.</p>
+            <a href="proyecto4.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="project">
+            <h3>Desarrollo de Página Web para Tienda Online con WordPress</h3>
+            <p>Desarrollé una página web completa para una tienda online utilizando WordPress, enfocándome en crear una experiencia de
+            usuario intuitiva y atractiva.</p>
+            <a href="proyecto5.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="project">
+            <h3>Sistemas De Recursos humanos</h3>
+            <p>Desarrollamos un sistema de gestión de recursos humanos para la Óptica Estrella de David. Este sistema fue diseñado para
+            optimizar los procesos de administración de personal, incluyendo la gestión de asistencia, empleados, planillas,y la creacion y seleccion de puestos de trabajo.</p>
+            <a href="proyecto6.html" class="btn" target="_blank">Ver Proyecto</a>
+        </div>
+    </div>
+</section>
+<section class="skills-section" id="lenguajes">
+    <h2>Habilidades de Programación</h2>
+    <div class="skills-container">
+        <div class="skill-card" onclick="showInfo('HTML', 'Nivel de conocimiento: 90%')">
+            <h3>HTML</h3>
+            <div class="progress-bar" style="width: 90%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('CSS', 'Nivel de conocimiento: 50%')">
+            <h3>CSS</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('Java', 'Nivel de conocimiento: 30%')">
+            <h3>Java</h3>
+            <div class="progress-bar" style="width: 30%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('C#', 'Nivel de conocimiento: 40%')">
+            <h3>C#</h3>
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('PHP', 'Nivel de conocimiento: 30%')">
+            <h3>PHP</h3>
+            <div class="progress-bar" style="width: 30%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('MySQL', 'Nivel de conocimiento: 40%')">
+            <h3>MySQL</h3>
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('PostgreSQL', 'Nivel de conocimiento: 60%')">
+            <h3>PostgreSQL</h3>
+            <div class="progress-bar" style="width: 60%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('Bootstrap', 'Nivel de conocimiento: 50%')">
+            <h3>Bootstrap</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('Git', 'Nivel de conocimiento: 40%')">
+            <h3>Git</h3>
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('VS Code', 'Nivel de conocimiento: 40%')">
+            <h3>VS Code</h3>
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('Scrum', 'Nivel de conocimiento: 50%')">
+            <h3>Scrum</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill-card" onclick="showInfo('ICONIX', 'Nivel de conocimiento: 40%')">
+            <h3>ICONIX</h3>
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+    </div>
+    <div class="info-container" id="infoContainer">
+        <h3 id="infoTitle"></h3>
+        <p id="infoDescription"></p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>Si deseas saber más sobre mis servicios o proyectos, no dudes en contactarme:</p>
+    <ul>
+        <li>Email: <a href="mailto:vv19020@ues.edu.sv">vv19020@ues.edu.sv</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/victoria-gabriela-velasquez-orellana-b11455294/">https://www.linkedin.com/in/victoria-gabriela-velasquez-orellana-b11455294/</a>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p> 2024 Victoria Gabriela Velásquez Orellana.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

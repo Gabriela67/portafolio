@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1d4e89;
+    padding: 1rem 0;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+.top-bar h1 {
+    font-size: 1.5rem;
+}
+
+.top-bar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #1d4e89;
+    transition: background-color 0.3s ease;
+}
+
+.top-bar nav a:hover {
+    background-color: #1d4e89;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.4;
+    max-width: 800px;
+    color: #f7941d;
+    
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.project-info p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gallery {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        width: 100%;
+        /* Para pantallas pequeñas, una imagen por fila */
+    }
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.team {
+    background-color: #eee;
+    padding: 2rem 0;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1d4e89;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
